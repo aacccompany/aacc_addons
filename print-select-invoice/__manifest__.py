@@ -3,7 +3,7 @@
 
 {
     "name": "Print Select Invoice",
-    "summary": "AACC Print Select Invoice",
+    "summary": "Print Select Invoice",
     "version": "17.0.0.0.0",
     "category": "Accounting",
     "website": "https://aacc-th.com/",
