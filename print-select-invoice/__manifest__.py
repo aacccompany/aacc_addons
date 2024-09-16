@@ -3,9 +3,9 @@
 
 {
     "name": "Print Select Invoice",
-    "summary": "AACC Invoice Custom Reports",
+    "summary": "AACC Print Select Invoice",
     "version": "17.0.0.0.0",
-    "category": "Sales",
+    "category": "Accounting",
     "website": "https://aacc-th.com/",
     "author": "AACC Thailand.",
     "license": "AGPL-3",
