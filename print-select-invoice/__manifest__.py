@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    "name": "AACC Invoice Reports",
+    "name": "Print Select Invoice",
     "summary": "AACC Invoice Custom Reports",
     "version": "17.0.0.0.0",
     "category": "Sales",
