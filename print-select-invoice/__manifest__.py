@@ -16,5 +16,10 @@
             "reports/invoices_report.xml",
             "security/ir.model.access.csv"
         ],
+    "image":[""],
+    "auto_install": False,
     "installable": True,
+    "Price": 29;
+    "Currency": "EUR",
+    
 }
