@@ -16,7 +16,7 @@
             "reports/invoices_report.xml",
             "security/ir.model.access.csv"
         ],
-    "image": ["static/description/description/background.png",],
+    "images": ["static/description/background.png",],
     "installable": True,
     "price": 27,
     "Currency": "EUR",
