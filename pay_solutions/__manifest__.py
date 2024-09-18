@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Pay Solutions",
+    'name': "Thailand Pay Solutions for QR Promptpay",
 
     'summary': """
       Thailand pay solutions for odoo promptpay""",
@@ -9,7 +9,7 @@
         Thailand pay solutions for odoo promptpay
     """,
 
-    'author': "AACC",
+    'author': "AACC Thailand.",
     'website': "https://aacc-th.wixsite.com/aacc-erpsoftware/",
 
     # Categories can be used to filter modules in modules listing
