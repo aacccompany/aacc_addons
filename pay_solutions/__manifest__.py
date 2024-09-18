@@ -26,7 +26,7 @@
         'views/ac_views.xml',
         'views/ac_templates.xml',
         'data/payment_acquirer_data.xml'
-    ]
+    ],
 
     "price": 27,
     "Currency": "EUR",
