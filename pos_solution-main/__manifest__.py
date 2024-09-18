@@ -38,4 +38,7 @@
     'qweb': [
         'static/src/view/view.xml',
     ],
+
+    "price": 27,
+    "Currency": "EUR",
 }
