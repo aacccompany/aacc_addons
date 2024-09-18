@@ -26,7 +26,7 @@
                         </t>
                         <tr>
                             <td>
-                                รวม
+                                Total
                             </td>
                             <td style="text-align:right">
                                 <span t-esc="'{0:,.2f}'.format(summary['total_amount'])" />
