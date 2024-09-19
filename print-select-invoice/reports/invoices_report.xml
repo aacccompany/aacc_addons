@@ -4,20 +4,30 @@
 
     <template id="invoices_report_view">
         <t t-call="web.html_container">
-            <div class="header" style="border-bottom: 2px solid black">
-                รายงาน 
-            </div>
+            <div class="header" style="border-bottom: 2px solid black margin-top: 10px;">
             <div class="article">
                 <table class="table table-condensed table-bordered" style="width: 100%">
                     <thead>
-                        <th class="text-center">เลขที่</th>
-                        <th class="text-center">ยอดเงิน</th>
+                        <th class="text-center">Number</th>
+                        <th class="text-center">Customer</th>
+                        <th class="text-center">Invoice Date</th>
+                        <th class="text-center">Payment Status</th>
+                        <th class="text-center">Amount Due</th>
                     </thead>
                     <tbody>
                         <t t-foreach="docs" t-as="doc">
                             <tr>
                                 <td>
                                     <span t-esc="doc['name']" />
+                                </td>
+                                <td>
+                                    <span t-esc="doc['invoice_partner_display_name']"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-esc="doc['invoice_date']"/>
+                                </td>
+                                <td class="text-center">
+                                    <span t-esc="dict(doc._fields['payment_state'].selection).get(doc.payment_state, '')"/>
                                 </td>
                                 <td style="text-align:right">
                                     <span t-esc="'{0:,.2f}'.format(doc['amount_total'])" />
