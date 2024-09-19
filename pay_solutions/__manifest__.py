@@ -28,6 +28,7 @@
         'data/payment_acquirer_data.xml'
     ],
 
+    "images": ["static/description/image3.png",],
     "price": 27,
     "Currency": "EUR",
 }
