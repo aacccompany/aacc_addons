@@ -39,6 +39,7 @@
         'static/src/view/view.xml',
     ],
 
+    "images": ["static/description/background.png",],
     "price": 27,
     "Currency": "EUR",
 }
