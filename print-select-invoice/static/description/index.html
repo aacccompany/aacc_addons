@@ -201,15 +201,25 @@
 
       <section class="sh_apps_buttons" style="padding:40px 0px; margin-top:2em;background-color: transparent;">
          <div class="container">
-            <div style="display: flex; justify-content: center; align-items: center;">
-               <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div>
-               <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                  <a class="shadow rounded py-3 px-4 mb-2 d-flex align-items-center justify-content-center" style="border-width: 1px;border-style: solid;border-color: #ffcc00;color: #fff;position: relative; overflow: hidden;text-decoration: none;border-radius: 0px;display: inline-block;font-size: 20px;font-weight: bold;width: 100%;background-color: #ffcc00;border-radius: 0.25rem !important;" href="https://apps.odoo.com/apps/modules/browse?author=Softhealer%20Technologies" target="_blank"><span class="fa fa-cube me-3" style="font-size: 20px;color: #fff;"></span><span class="align-middle">Our Apps</span></a>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div> 
-            </div>
+             <div class="row justify-content-center">
+                 <!-- Empty columns for spacing on larger screens -->
+                 <div class="col-lg-3 col-md-3"></div>
+                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center">
+                     <a 
+                         class="shadow rounded py-3 px-4 mb-2 d-flex align-items-center justify-content-center" 
+                         href="https://apps.odoo.com/apps/modules/browse?author=Softhealer%20Technologies" 
+                         target="_blank"
+                         style="border-width: 1px;border-style: solid;border-color: #ffcc00;color: #fff;position: relative; overflow: hidden;text-decoration: none;border-radius: 0px;display: inline-block;font-size: 20px;font-weight: bold;width: 100%;background-color: #ffcc00;border-radius: 0.25rem !important;"
+                         onmouseover="this.style.backgroundColor='#fff'; this.style.color='#ffcc00'; this.querySelector('.fa').style.color='#ffcc00';"
+                         onmouseout="this.style.backgroundColor='#ffcc00'; this.style.color='#fff'; this.querySelector('.fa').style.color='#fff';">
+                         <span class="fa fa-cube me-3" style="font-size: 20px;color: #fff;"></span>
+                         <span class="align-middle">Our Apps</span>
+                     </a>
+                 </div>
+                 <div class="col-lg-3 col-md-3"></div>
+             </div>
          </div>
-      </section> 
+     </section>
   
       <section class="sh_our_services" style="padding: 50px 0px;background-color: transparent;">
          <div class="container">
@@ -272,16 +282,28 @@
             </div>
          </div>
       </section>
+
       <section class="sh_our_contacts" style="padding:40px 0px;background-color: transparent;">
-      <div class="container"> 
-            <div style="display: flex; justify-content: center; align-items: center;" class="sh_center text-center row">
-               <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div>
-               <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-                  <a class="shadow rounded py-3 px-4 d-flex justify-content-center align-items-center mb-2" style="border-width: 1px;border-style: solid;border-color: #ce493b;color: #fff;position: relative; overflow: hidden;text-decoration: none;border-radius: 0px;font-size: 20px;font-weight: bold;width: 100%;background-color: #ce493b;border-radius: 0.25rem !important;" href="mailto:aaccth.office@gmail.com" target="_blank"><span class="fa fa-envelope me-3" style="font-size: 30px;color: #fff;"></span><span class="align-middle">Email</span></a>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div> 
-            </div>
+         <div class="container"> 
+             <div style="display: flex; justify-content: center; align-items: center;" class="sh_center text-center row">
+                 <!-- Empty columns for spacing on larger screens -->
+                 <div class="col-lg-3 col-md-3"></div> 
+                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex justify-content-center"> <!-- Centering on all devices -->
+                     <a 
+                         class="shadow rounded py-3 px-4 d-flex justify-content-center align-items-center mb-2" 
+                         href="mailto:aaccth.office@gmail.com" 
+                         target="_blank"
+                         style="border-width: 1px;border-style: solid;border-color: #ce493b;color: #fff;position: relative; overflow: hidden;text-decoration: none;border-radius: 0px;font-size: 20px;font-weight: bold;width: 100%;background-color: #ce493b;border-radius: 0.25rem !important;"
+                         onmouseover="this.style.backgroundColor='#fff'; this.style.color='#ce493b'; this.querySelector('.fa').style.color='#ce493b';"
+                         onmouseout="this.style.backgroundColor='#ce493b'; this.style.color='#fff'; this.querySelector('.fa').style.color='#fff';">
+                         <span class="fa fa-envelope me-3" style="font-size: 30px;color: #fff;"></span>
+                         <span class="align-middle">Email</span>
+                     </a>
+                 </div>
+                 <div class="col-lg-3 col-md-3"></div> <!-- Empty columns for spacing on larger screens -->
+             </div>
          </div>
-      </section>
+     </section>
+      
    </body>
 </html>
