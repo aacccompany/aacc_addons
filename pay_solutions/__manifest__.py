@@ -8,7 +8,8 @@
     'description': """
         Thailand pay solutions for odoo promptpay
     """,
-
+    
+    "license": "AGPL-3",
     'author': "AACC Thailand.",
     'website': "https://aacc-th.wixsite.com/aacc-erpsoftware/",
 
