@@ -11,7 +11,7 @@
     
     "license": "AGPL-3",
     'author': "AACC Thailand.",
-    'website': "https://aacc-th.wixsite.com/aacc-erpsoftware/",
+    'website': "https://aacc-th.com/",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
