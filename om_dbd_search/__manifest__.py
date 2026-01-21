@@ -4,7 +4,7 @@
     'license': 'OPL-1',
     'category': 'Contacts/Accounting/Localization/Master Data',
     'summary': 'Retrieve company information from DBD Open Data API with 13-digit tax ID.',
-    'price': 18,
+    'price': 20,
     'currency': 'USD',
     'support': 'aaccth.office@gmail.com',
     'depends': ['base', 'contacts'],
@@ -16,5 +16,4 @@
     'installable': True,
     'application': True,
     'images': ['static/description/banner.png'],
-
 } 
