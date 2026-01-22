@@ -2,7 +2,9 @@
     'name': 'DBD Company Lookup (Open Data)',
     'version': '19.0',
     'license': 'OPL-1',
+    'author': 'AACC Company',
     'category': 'Contacts/Accounting/Localization/Master Data',
+    'website': 'https://aacc-th.com',
     'summary': 'Retrieve company information from DBD Open Data API with 13-digit tax ID.',
     'price': 20,
     'currency': 'USD',
@@ -16,4 +18,5 @@
     'installable': True,
     'application': True,
     'images': ['static/description/banner.png'],
+
 } 
