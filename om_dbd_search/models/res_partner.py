@@ -1,7 +1,7 @@
 import requests
 import re
 from odoo import models, fields, api, _
-from odoo.exceptions import UserError
+from odoo.exceptions import UserError, ValidationError 
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
@@ -9,6 +9,22 @@ class ResPartner(models.Model):
     objective = fields.Text(string="วัตถุประสงค์")
     registration_date = fields.Date(string="วันที่จดทะเบียน")
     business_type_name = fields.Char(string="ประเภทธุรกิจ")
+
+    _sql_constraints = [
+        ('vat_unique', 'unique(vat)', 'เลขประจำตัวผู้เสียภาษีนี้มีอยู่ในระบบแล้ว! ไม่สามารถสร้างซ้ำได้')
+    ]
+
+    @api.constrains('vat')
+    def _check_vat_unique(self):
+        for record in self:
+            if record.vat:
+                # ค้นหาว่ามีใครใช้เลข VAT นี้ไปแล้วหรือยัง (ยกเว้นตัวเอง)
+                duplicate = self.search([
+                    ('vat', '=', record.vat), 
+                    ('id', '!=', record.id)
+                ], limit=1)
+                if duplicate:
+                    raise ValidationError(_("ไม่สามารถบันทึกได้: เลขนิติบุคคล %s ถูกใช้งานแล้วโดยบริษัท '%s'") % (record.vat, duplicate.name))
 
     def action_get_dbd_data(self):
         self.ensure_one()
@@ -21,6 +37,14 @@ class ResPartner(models.Model):
         
         if len(clean_vat) != 13:
             raise UserError(_("เลขนิติบุคคลต้องเป็นตัวเลข 13 หลักเท่านั้น (ค่าที่พบ: %s)") % clean_vat)
+        
+        existing_partner = self.search([
+            ('vat', '=', clean_vat),
+            ('id', '!=', self.id)
+        ], limit=1)
+        
+        if existing_partner:
+            raise UserError(_("พบข้อมูลในระบบแล้ว: เลขนิติบุคคลนี้ถูกลงทะเบียนไว้ในชื่อ '%s' เรียบร้อยแล้ว") % existing_partner.name)
 
         get_param = self.env['ir.config_parameter'].sudo().get_param
         api_url = get_param('om_dbd_search.api_url')
