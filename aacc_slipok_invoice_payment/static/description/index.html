@@ -1,0 +1,333 @@
+<!-- Main Header Section -->
+<style>
+    /* Global/Typography */
+    .aacc-container {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Buttons */
+    .aacc-btn-primary {
+        background-color: #fca311;
+        color: white !important;
+        font-weight: 700;
+        border-radius: 50px;
+        padding: 12px 35px;
+        box-shadow: 0 4px 15px rgba(252, 163, 17, 0.4);
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        border: 2px solid #fca311;
+    }
+
+    .aacc-btn-primary:hover {
+        background-color: transparent;
+        color: #fca311 !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(252, 163, 17, 0.6);
+        text-decoration: none;
+    }
+
+    /* Footer Section */
+    .aacc-footer {
+        background-color: #0b132b;
+        padding: 70px 0 40px 0;
+        color: white;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .aacc-footer-title {
+        color: white;
+        font-weight: 800;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .aacc-footer-subtitle {
+        font-size: 16px;
+        color: #e5e5e5;
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+
+    /* Logo block */
+    .aacc-footer-logo-wrap {
+        background: white;
+        padding: 10px;
+        border-radius: 12px;
+        margin-right: 20px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease;
+    }
+
+    .aacc-footer-logo-wrap:hover {
+        transform: rotate(-3deg) scale(1.08);
+    }
+
+    .aacc-footer-logo {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+
+    .aacc-footer-company-name {
+        margin: 0;
+        font-weight: 900;
+        color: #fff;
+        font-size: 26px;
+        letter-spacing: 0.5px;
+    }
+
+    .aacc-footer-tagline {
+        color: #fca311;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+    /* Copyright */
+    .aacc-footer-creator {
+        margin: 0;
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    .aacc-footer-heart {
+        color: #ff4d4f;
+        display: inline-block;
+        animation: heartbeat 1.5s infinite;
+    }
+
+    .aacc-footer-author {
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .aacc-footer-copyright {
+        margin: 0;
+        font-size: 12px;
+        margin-top: 6px;
+        color: #888;
+    }
+
+    .aacc-footer-divider {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 40px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    @keyframes heartbeat {
+
+        0%,
+        100% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+    }
+</style>
+<section class="oe_container aacc-container" style="background-color: #fffaf0; padding: 40px 0;">
+    <div class="row align-items-center oe_spaced">
+        <div class="col-12 col-md-6 order-md-2 text-center">
+            <img src="banner.png" alt="App Banner"
+                style="max-width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+            <p class="text-muted mt-2 small"><em></em></p>
+        </div>
+        <div class="col-12 col-md-6 order-md-1">
+            <h1 style="color: #333; font-weight: 800; font-size: 38px; line-height: 1.2;">LINE Payment & Slip
+                Auto-Verify Integration</h1>
+            <p style="color: #666; font-size: 18px; line-height: 1.6; margin-top: 20px;">
+                Revolutionize your payment collection process with AI-verified bank transfers via LINE OA. Instantly
+                notify customers, verify slips automatically, and reconcile payments in Odoo without burning your time.
+            </p>
+            <div style="margin-top: 30px;">
+                <span class="badge"
+                    style="background-color: #fca311; color: white; padding: 10px 20px; font-size: 16px; border-radius: 50px;">Odoo
+                    19 Ready</span>
+                <span class="badge bg-dark mt-2 mt-md-0"
+                    style="padding: 10px 20px; font-size: 16px; border-radius: 50px; margin-left: 10px;">🇹🇭 Thai
+                    Payment Support</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Highlights Section -->
+<section class="oe_container" style="background-color: #ffffff; padding: 60px 0;">
+    <div class="oe_row text-center oe_spaced">
+        <h2 style="color: #14213d; font-weight: 700; margin-bottom: 40px;">Why Choose This Module?</h2>
+    </div>
+    <div class="row mt-4 oe_spaced">
+        <!-- Feature 1 -->
+        <div class="col-12 col-md-4 text-center">
+            <div
+                style="background-color: #fff8e1; border-radius: 50%; width: 80px; height: 80px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <i class="fa fa-paper-plane" style="font-size: 32px; color: #fca311;"></i>
+            </div>
+            <h4 style="font-weight: 700; color: #333;">1-Click LINE Billing</h4>
+            <p style="color: #666;">Send invoices directly from Odoo to your customer's LINE chat natively with modern
+                Flex Messages.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="col-12 col-md-4 text-center">
+            <div
+                style="background-color: #fff8e1; border-radius: 50%; width: 80px; height: 80px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <i class="fa fa-qrcode" style="font-size: 32px; color: #fca311;"></i>
+            </div>
+            <h4 style="font-weight: 700; color: #333;">Payment QR Codes</h4>
+            <p style="color: #666;">Send dynamic bank/promptpay QR Codes along with the invoice to facilitate instant
+                and accurate payments.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="col-12 col-md-4 text-center">
+            <div
+                style="background-color: #fff8e1; border-radius: 50%; width: 80px; height: 80px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                <i class="fa fa-robot" style="font-size: 32px; color: #fca311;"></i>
+            </div>
+            <h4 style="font-weight: 700; color: #333;">AI Slip Verification</h4>
+            <p style="color: #666;">Automatically verify customer bank slips via AI Verification API, detecting fraud
+                and
+                reconciling the payment in Odoo instantly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- How to Use Section -->
+<section class="oe_container" style="background-color: #f8f9fa; padding: 60px 0;">
+    <div class="row oe_spaced">
+        <div class="col-12 text-center">
+            <h2 style="color: #14213d; font-weight: 700; margin-bottom: 40px;"><span style="color: #fca311;">4 Easy
+                    Steps</span> to Automate Payments</h2>
+        </div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="row align-items-center mb-5 oe_spaced">
+        <div class="col-12 col-md-6">
+            <div
+                style="background-color: #fca311; color: white; border-radius: 5px; padding: 5px 15px; display: inline-block; font-weight: bold; margin-bottom: 15px;">
+                Step 1</div>
+            <h3 style="font-weight: 700; color: #333;">Configuration & Setup</h3>
+            <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                Navigate to <strong>Settings &gt; Invoice Slip Verification</strong>. Enter your LINE Messaging API
+                credentials (Channel Secret & Access Token) and your Verification Provider details. You can also upload
+                your
+                company's Payment QR Code here.
+            </p>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+            <img class="img-fluid" src="settings_menu.png" alt="Settings Setup"
+                style="border: 2px solid #eee; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-height: 250px;" />
+            <p class="text-muted mt-2 small"><em></em></p>
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse oe_spaced">
+        <div class="col-12 col-md-6">
+            <div
+                style="background-color: #fca311; color: white; border-radius: 5px; padding: 5px 15px; display: inline-block; font-weight: bold; margin-bottom: 15px;">
+                Step 2</div>
+            <h3 style="font-weight: 700; color: #333;">Send Bill via LINE</h3>
+            <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                Create a standard Customer Invoice. Ensure the customer has linked their LINE account. Once posted,
+                simply click the new <strong>"Send Bill via LINE"</strong> button. The invoice details and payment QR
+                code will be pushed directly to the customer's chat.
+            </p>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+            <img class="img-fluid" src="send_bill.png" alt="Send Bill Button"
+                style="border: 2px solid #eee; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" />
+            <p class="text-muted mt-2 small"><em>(Image Placeholder: Invoice form with Send button)</em></p>
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="row align-items-center mb-5 oe_spaced">
+        <div class="col-12 col-md-6">
+            <div
+                style="background-color: #fca311; color: white; border-radius: 5px; padding: 5px 15px; display: inline-block; font-weight: bold; margin-bottom: 15px;">
+                Step 3</div>
+            <h3 style="font-weight: 700; color: #333;">Customer Uploads Bank Slip</h3>
+            <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                The customer reviews your beautiful LINE Flex Message and scans the QR code to pay. After payment, they
+                simply send the <strong>Bank Transfer Slip image</strong> back right into the LINE Chat.
+            </p>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+            <img class="img-fluid" src="chat_qr.png" alt="Customer Chat"
+                style="max-height: 350px; border: 2px solid #eee; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" />
+            <p class="text-muted mt-2 small"><em>(Image Placeholder: LINE Chat showing the bill and QR)</em></p>
+        </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="row align-items-center mb-5 flex-md-row-reverse oe_spaced">
+        <div class="col-12 col-md-6">
+            <div
+                style="background-color: #fca311; color: white; border-radius: 5px; padding: 5px 15px; display: inline-block; font-weight: bold; margin-bottom: 15px;">
+                Step 4</div>
+            <h3 style="font-weight: 700; color: #333;">AI Verification & Auto-Reconcile</h3>
+            <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                The Odoo Webhook catches the image and sends it to the AI Verification API. The AI verifies the exact
+                amount,
+                checks for duplicate slips, and ensures the money went to your bank account. Upon success, Odoo
+                registers the payment, marks the invoice as <strong>PAID</strong>, and the LINE Bot replies with a
+                receipt confirmation.
+            </p>
+        </div>
+        <div class="col-12 col-md-6 text-center">
+            <img class="img-fluid" src="slip_verify.png" alt="Slip Verification"
+                style="max-height: 350px; border: 2px solid #eee; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);" />
+            <p class="text-muted mt-2 small"><em>(Image Placeholder: LINE Bot replying 'Payment Verify Success')</em>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="oe_container aacc-container aacc-footer">
+    <div class="row oe_spaced text-center mb-5">
+        <h2 class="aacc-footer-title">Ready to Transform Your Workflow?</h2>
+        <p class="aacc-footer-subtitle">Let us handle the boring accounting tasks while you focus on scaling your
+            business.</p>
+        <div>
+            <a href="mailto:support@yourcompany.com" class="btn btn-lg aacc-btn-primary">
+                <i class="fa fa-envelope" style="margin-right: 8px;"></i> Contact Us for Support
+            </a>
+        </div>
+    </div>
+
+    <div class="row oe_spaced aacc-footer-divider">
+        <!-- Company Info & Logo -->
+        <div
+            class="col-12 col-md-6 text-center text-md-left mb-4 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-center">
+            <div class="aacc-footer-logo-wrap">
+                <img src="your_logo.png" alt="Company Logo" class="aacc-footer-logo" />
+            </div>
+            <div style="text-align: left;">
+                <p
+                    style="color: #ccc; font-size: 11px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2px;">
+                    Powered By</p>
+                <h4 class="aacc-footer-company-name">AACC</h4>
+                <span class="aacc-footer-tagline">Technology & Innovation</span>
+            </div>
+        </div>
+
+        <!-- Creator & Copyright Info -->
+        <div
+            class="col-12 col-md-6 text-center text-md-right d-flex flex-column justify-content-center align-items-center align-items-md-end">
+            <p class="aacc-footer-creator">Crafted with <i class="fa fa-heart aacc-footer-heart"></i> by <strong
+                    class="aacc-footer-author">Alex</strong></p>
+            <p class="aacc-footer-copyright">© 2026 AACC. All rights reserved.</p>
+        </div>
+    </div>
+</section>
